@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  color: #444;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header {
+  /* background-color: orangered; */
+  height: 100vh;
+  position: relative;
+  background-color: #8cc196;
+  background-image: url(https://cdn.pixabay.com/photo/2018/03/09/22/19/annual-rings-3212803_1280.jpg);
+  background-size: cover;
+  color: #000000e8;
+}
+
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  /* background-image: linear-gradient(to right, red, blue); */
+
+  /* background-color: green; */
+}
+
+.header-container {
+  width: 1200px;
+  position: absolute;
+
+  /* In relation to PARENT size */
+  left: 50%;
+  top: 50%;
+
+  /* In relation to ELEMENT size */
+  transform: translate(-50%, -50%);
+  background-image: url(Reserva\casarf\Casa\95647587.jpg);
+  /* background-color: violet; */
+
+  /* text-align: center; */
+}
+
+.header-container-inner {
+  width: 50%;
+  /* background-color: blue; */
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+
+section {
+  padding: 96px 0;
+  background-color: #f7f7f7;
+}
+table {
+  width: 800px;
+  margin-top: 100px;
+  font-size: 18px;
+  /* border: 1px solid #343a40; */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  /* border: 1px solid #343a40; */
+  padding: 16px 24px;
+  text-align: center;
+}
+
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+}
+
+thead th {
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+footer p {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-top: 3px solid rgba(0, 0, 0, 0.578);
+  margin-top: 150px;
+}
+.footer {
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+}
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-heading {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}

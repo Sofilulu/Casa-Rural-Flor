@@ -1,0 +1,494 @@
+h2,
+h3,
+h4,
+li,
+footer {
+  font-family: "Inter" sans-serif;
+}
+body {
+  font-family: "Inter" sans-serif;
+  line-height: 1.4;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #fdfadd07;
+  font-size: 22px;
+}
+.container {
+  width: 1000px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 45px;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.881);
+  font-size: 44px;
+  font-family: serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+h2 {
+  color: rgba(1, 59, 1, 0.9);
+  font-size: 32px;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: serif;
+}
+ul,
+ol,
+.related {
+  padding-top: 5px;
+  font-size: 35px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(55, 178, 771, 59, 1, 0.9);
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  margin-top: 35px;
+  padding-bottom: 35px;
+
+  justify-content: center;
+  text-align: center;
+}
+
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 1rem;
+  position: relative;
+}
+.container {
+  width: 1000px;
+  margin-left: 90px;
+  margin-right: 100px;
+  margin-top: 45px;
+}
+.logo {
+  height: 8.2rem;
+  width: 15.2rem;
+}
+.main-header {
+  margin-top: 10px;
+  justify-content: center;
+}
+.main-header {
+  /* background-color: rgb(255, 196, 128);*/
+
+  border-top: 6px solid rgba(0, 110, 31, 0.368);
+  margin-top: 1px;
+}
+a:link {
+  color: rgba(255, 146, 43, 0.863);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(34, 160, 122);
+}
+a:hover {
+  color: rgb(255, 168, 86);
+  font-weight: bold;
+}
+a:active {
+  background-color: aliceblue;
+}
+nav {
+  font-size: 25px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+nav a:link {
+  margin: 20px;
+  padding: 20px;
+  /* para ponerlos vertical con espacios 
+  display: block;
+  display: inline-block;*/
+  text-align: center;
+}
+.main-header-img {
+  float: left;
+  margin-left: 15px;
+  margin-top: -40px;
+  margin-right: -255px;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+/*ENCABEZADO FOTOS*/
+
+.fotos1 {
+  width: 380px;
+  height: 280px;
+  background-image: url(https://media3.clubrural.com/img695x521/burgos/la-flor/172240_la-flor_0606879001447949329_o.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-property: all;
+  transition-duration: 3s;
+  padding: 10px;
+}
+.fotos1:hover {
+  background-image: url(https://media3.clubrural.com/img695x521/burgos/la-flor/172240_la-flor_1567588279_o.jpg);
+  background-size: cover;
+}
+.fotos2 {
+  width: 380px;
+  height: 280px;
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1280x900/95647580.jpg?k=c77a5fb07aac88baaa00cb3f9fff9937e15f0941ff909e00efc1f6966a1c0889&o=&hp=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-property: all;
+  transition-duration: 3s;
+  padding: 10px;
+}
+.fotos2:hover {
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1280x900/95647574.jpg?k=5e64a6c1f874c15993c4ea1920d695f6f676b2f23267f73bc280e0d467c41bd1&o=&hp=1);
+  background-size: cover;
+}
+.fotos3 {
+  width: 390px;
+  height: 280px;
+  background-image: url(https://media3.clubrural.com/imgmarcao/burgos/casa-rural-flor/172240_casa-rural-flor_0863461001635943675_o.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-property: all;
+  transition-duration: 3s;
+  padding: 10px;
+}
+.fotos3:hover {
+  background-image: url(https://media3.clubrural.com/imgmarcao/burgos/la-flor/172240_la-flor_0161402001447949359_o.jpg);
+  background-size: cover;
+}
+header + .grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  margin-top: 25px;
+  padding-bottom: 35px;
+
+  justify-content: center;
+  text-align: center;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+
+  border-top: 1px solid rgba(255, 188, 87, 0.938);
+  border-bottom: 4px solid rgb(255, 188, 87, 0.938);
+  padding-top: 25px;
+  padding-bottom: 20px;
+  color: rgb(255, 168, 86);
+}
+
+.main-nav-link:link {
+  color: rgba(255, 146, 43, 0.863);
+  text-decoration: none;
+}
+.main-nav-link:visited {
+  text-decoration: none;
+  color: rgb(34, 160, 122);
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover {
+  color: rgb(255, 168, 86);
+  font-weight: bold;
+}
+.main-nav-link:active {
+  background-color: aliceblue;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.icon-mobile-nav {
+  height: 3.8rem;
+  width: 3.8rem;
+  color: #333;
+  margin-bottom: 2660px;
+  margin-right: -100px;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+/*STICKY*/
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+/*SEVICIOS*/
+.Servicios {
+  display: inline-block;
+  list-style: square;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+article {
+  margin-bottom: 85px;
+}
+.textowifi {
+  box-shadow: 10px 10px 10px 10px rgba(139, 139, 139, 0.356);
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  border-radius: 20px;
+}
+.textoservicios {
+  box-shadow: 10px 10px 10px 10px rgba(139, 139, 139, 0.356);
+  padding-bottom: 10px;
+  padding: 25px;
+  border-radius: 20px;
+}
+.textonaturaleza {
+  box-shadow: 10px 10px 10px 10px rgba(139, 139, 139, 0.356);
+  padding: 25px;
+  border-radius: 20px;
+}
+/*infromacion relevante*/
+article {
+  margin-bottom: 85px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 490px;
+  right: 10px;
+}
+
+h1::first-letter {
+  font-style: normal;
+}
+h2 {
+  position: relative;
+}
+.btn:link,
+.btn:visited {
+  background-color: #098b64f6;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 16px 32px;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 25px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+/*CTA*/
+.section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
+  padding: 0rem 10rem 10rem 0rem;
+}
+
+.cta {
+  display: grid;
+  /* 2/3 = 66.6% + 1/3 = 33.3% */
+  grid-template-columns: repeat (2fr 2fr);
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 0rem 6.4rem 3.4rem 4.4rem;
+  color: #45260a;
+  justify-content: center;
+}
+
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 5rem;
+  row-gap: 2.6rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+.btn--form {
+  align-self: end;
+  background-color: #ececec;
+  color: black;
+  padding: 1.2rem;
+  position: static;
+}
+/*footer*/
+footer p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-top: 3px solid rgba(0, 0, 0, 0.578);
+  margin-top: 150px;
+}
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 250px;
+  justify-content: center;
+  text-align: center;
+}

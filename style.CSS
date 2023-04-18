@@ -1,0 +1,616 @@
+h2,
+h3,
+h4,
+li,
+footer {
+  font-family: "Inter" sans-serif;
+}
+
+/*universal selector, que coja todos los elementos
+* {
+  margin: 0;
+  padding: 0;
+}*/
+
+body {
+  font-family: "Inter" sans-serif;
+  line-height: 1.4;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #fdfadd07;
+  font-size: 22px;
+}
+/* para poner margenes en toda la pag class= container */
+.container {
+  width: 1000px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 35px;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.881);
+  font-size: 44px;
+  font-family: serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+h2 {
+  color: rgba(1, 59, 1, 0.9);
+  font-size: 32px;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: serif;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+ul,
+ol,
+.related {
+  padding-top: 5px;
+  font-size: 35px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(55, 178, 771, 59, 1, 0.9);
+}
+/*body {
+   background-color: ghostwhite;} */
+
+/*stylinglinks*/
+a:link {
+  color: rgba(255, 146, 43, 0.863);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(34, 160, 122);
+}
+a:hover {
+  color: rgb(255, 168, 86);
+  font-weight: bold;
+}
+a:active {
+  background-color: aliceblue;
+}
+/**************************/
+/* HEADER */
+/**************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 1rem;
+  position: relative;
+}
+.main-header {
+  /* background-color: rgb(255, 196, 128);*/
+
+  border-top: 6px solid rgba(0, 110, 31, 0.368);
+  margin-top: 1px;
+}
+.main-header-img {
+  float: left;
+  margin-left: 15px;
+  margin-top: -40px;
+  margin-right: -255px;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  font-size: 25px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+nav a:link {
+  margin: 20px;
+  padding: 20px;
+  /* para ponerlos vertical con espacios 
+  display: block;
+  display: inline-block;*/
+  text-align: center;
+}
+
+article {
+  margin-bottom: 85px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+}
+h2 {
+  position: relative;
+}
+
+/* Para seleccionar solo los parrafos que esten despues de un H3
+h3 + p::first-line {
+  color: orange;
+}*/
+
+.Servicios {
+  display: inline-block;
+  list-style: square;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  border-top: 1px solid rgba(255, 188, 87, 0.938);
+  border-bottom: 4px solid rgb(255, 188, 87, 0.938);
+  padding-top: 25px;
+  padding-bottom: 20px;
+  color: rgb(255, 168, 86);
+}
+
+.main-nav-link:link {
+  color: rgba(255, 146, 43, 0.863);
+  text-decoration: none;
+}
+.main-nav-link:visited {
+  text-decoration: none;
+  color: rgb(34, 160, 122);
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover {
+  color: rgb(255, 168, 86);
+  font-weight: bold;
+}
+.main-nav-link:active {
+  background-color: aliceblue;
+}
+div {
+  text-align: justify;
+}
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #098b64f6;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 16px 32px;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 45px;
+  transition: b;
+}
+.btn:hover,
+.btn:active {
+  background-color: #42bb97;
+}
+.carousel {
+  width: 820px;
+  margin: 100px auto;
+  background-color: #2ea5918e;
+  /* padding: 32px; */
+  /* padding-left: 86px; */
+  /* padding-right: 48px; */
+  padding: 32px 58px 32px 58px;
+
+  border-radius: 50px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 86px;
+}
+
+.container + img {
+  border-radius: 10px;
+  transform: scale(1.5);
+  padding: 25px;
+}
+
+.testimonial-text {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  font-size: 22px;
+  margin-bottom: 4px;
+  color: #000000;
+}
+
+.testimonial-job {
+  font-size: 12px;
+  color: #c3fae8;
+}
+
+/* CONTROLS */
+.btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--left {
+  /* In relation to PARENTE ELEMENT */
+  left: 0;
+  top: 55%;
+
+  /* In relation to ELEMENT ITSELF */
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  top: 55%;
+
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 120px;
+  transform: translate(-50%, 32px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #087f5b;
+}
+button {
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  /* position: absolute; */
+  bottom: 70px;
+  right: 50px;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  /* color: #45260a; */
+  /* color: #343a40; */
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+
+  /* border: 3px solid #fff; */
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+.comentario {
+  width: 100px;
+  height: 90px;
+}
+/* HELPER/SETTINGS CLASSES */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+  justify-content: center;
+}
+
+strong {
+  font-weight: 500;
+}
+img {
+  border-radius: 30px;
+}
+footer p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 3px solid rgba(0, 0, 0, 0.578);
+  margin-top: 150px;
+}
+footer p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-top: 3px solid rgba(0, 0, 0, 0.578);
+  margin-top: 150px;
+}
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
